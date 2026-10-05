@@ -8,7 +8,7 @@ export function PageIntro({ label, title, children }: { label: string; title: st
   return <section className="page-intro"><div className="site-container"><div className="eyebrow"><span className="label-line" />{label}</div><h1>{title}</h1><div className="intro-copy">{children}</div></div></section>;
 }
 export function ProgrammeGrid({ preview = false }: { preview?: boolean }) {
-  return <div className="programme-grid">{programmes.map((programme, index) => <article className="programme-item" key={programme.title}><div className="programme-top"><programme.icon strokeWidth={1.5} size={27} /><span className="item-number">0{index + 1}</span></div><h3>{programme.title}</h3>{!preview && <p>{programme.description}</p>}<Link to="/programmes" hash={preview ? undefined : `programme-${index + 1}`} className="programme-link" aria-label={`Explore ${programme.title}`}><ArrowUpRight size={21} /></Link></article>)}</div>;
+  return <div className="programme-grid">{programmes.map((programme, index) => <article id={`programme-${index + 1}`} className="programme-item" key={programme.title}><div className="programme-top"><programme.icon strokeWidth={1.5} size={27} /><span className="item-number">0{index + 1}</span></div><h3>{programme.title}</h3>{!preview && <p>{programme.description}</p>}{preview && <Link to="/programmes" hash={`programme-${index + 1}`} className="programme-link" aria-label={`Explore ${programme.title}`}><ArrowUpRight size={21} /></Link>}</article>)}</div>;
 }
 export function ImpactProcess() {
   return <div className="impact-process">{impactSteps.map((step, i) => <article key={step.title}><div className="step-line"><span>0{i + 1}</span>{i < 4 && <ArrowRight size={20} />}</div><h3>{step.title}</h3><p>{step.description}</p></article>)}</div>;
