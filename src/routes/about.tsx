@@ -1,0 +1,9 @@
+import { createFileRoute } from '@tanstack/react-router';
+import { PageIntro, Purpose, Beneficiaries, JoinCTA } from '@/components/iydi-sections';
+import { pageHead } from '@/lib/iydi-content';
+import logo from '@/assets/iydi-official-logo.webp.asset.json';
+
+export const Route = createFileRoute('/about')({ head: () => pageHead('About the organization', 'Meet IYDI, a Nigerian youth-focused organization committed to empowering young people and women for sustainable development.'), component: About });
+function About() {
+  return <><PageIntro label="About IYDI" title="People. Potential. Purpose."><p>A Nigerian development organization with young people and women at the heart of its work.</p></PageIntro><section className="section"><div className="site-container about-grid"><img className="about-logo" src={logo.url} alt="Official Impact Youth Development Initiative logo" width="280" height="280" /><div><span className="eyebrow">Impact Youth Development Initiative</span><h2>Empowerment with<br />a shared purpose.</h2><p className="lead-copy">IYDI is committed to empowering young people and women to become productive, innovative, responsible and active contributors to sustainable community and national development.</p><p>Our focus connects skills, entrepreneurship, innovation, leadership, mentorship and opportunities. Across nine programme areas, we place people and their potential at the centre of development.</p></div></div></section><section className="section purpose-section"><div className="site-container"><Purpose /></div></section><section className="section"><div className="site-container serve-grid"><div><span className="eyebrow">Who we serve</span><h2>Opportunity<br />for more people.</h2></div><Beneficiaries /></div></section><JoinCTA /></>;
+}
