@@ -20,11 +20,11 @@ export const programmes = [
   { title: 'Peacebuilding & Community Development', icon: Handshake, description: 'Collaboration, active citizenship and sustainable community development.' },
 ];
 export const impactSteps = [
-  { title: 'Identify', description: 'Recognise the needs, potential and opportunities of young people and women.' },
-  { title: 'Empower', description: 'Build skills, knowledge and confidence through education and capacity development.' },
-  { title: 'Connect', description: 'Bring people together with mentors, networks and opportunities.' },
-  { title: 'Support', description: 'Encourage progress through guidance, collaboration and enterprise development.' },
-  { title: 'Measure', description: 'Focus on learning and meaningful contributions to sustainable development.' },
+  { title: 'Identify', description: 'Identify challenges, talents, ideas and opportunities.' },
+  { title: 'Empower', description: 'Provide knowledge, skills, training, mentorship and resources.' },
+  { title: 'Connect', description: 'Connect beneficiaries with mentors, investors, institutions, markets, employers and development partners.' },
+  { title: 'Support', description: 'Provide continued guidance, technical assistance and post-programme engagement.' },
+  { title: 'Measure', description: 'Track outcomes, lessons and impact for continuous improvement.' },
 ];
 export const beneficiaries = [
   'Young people & emerging entrepreneurs', 'Women & women-led businesses',
