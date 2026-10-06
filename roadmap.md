@@ -7,3 +7,4 @@
 - [ ] Add reusable upcoming/past events, event details and filtered gallery/lightbox.
 - [ ] Publish official contacts, email-preparing form and expanded footer.
 - [ ] Apply layered reds and green accents; verify mobile/tablet/desktop layouts.
+- [ ] Publish the President’s authoritative biography verbatim, all roles and core areas, with a reserved portrait area.
