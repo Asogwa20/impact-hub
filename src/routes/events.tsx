@@ -1,7 +1,0 @@
-import { createFileRoute } from '@tanstack/react-router';
-import { CalendarDays } from 'lucide-react';
-import { PageIntro, SummitFeature, JoinCTA } from '@/components/iydi-sections';
-import { initiatives, pageHead } from '@/lib/iydi-content';
-
-export const Route = createFileRoute('/events')({ head: () => pageHead('Events & flagship initiative', 'Discover the Impact Business Innovation Summit, IYDI’s flagship initiative connecting entrepreneurs, innovators and development stakeholders.'), component: Events });
-function Events() { return <><PageIntro label="Events & initiatives" title="Where ideas meet opportunity."><p>Connecting young people, women, enterprise and innovation through IYDI’s flagship initiative.</p></PageIntro>{initiatives.map(initiative => <SummitFeature key={initiative.id} initiative={initiative} detailed />)}<section className="section"><div className="site-container"><div className="section-heading"><div><span className="eyebrow">Looking ahead</span><h2>Upcoming events.</h2></div></div><div className="information-state"><CalendarDays size={30} strokeWidth={1.3} /><div><h3>No event dates announced yet.</h3><p>Confirmed dates, locations and registration details will be published here when available.</p></div></div></div></section><JoinCTA /></>; }
